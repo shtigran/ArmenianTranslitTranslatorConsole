@@ -9,7 +9,7 @@ Many Armenians in the world aren't able to understand armenian letters and armen
 ----
 ### ReplaceArm class implementation
 
-՝՝՝c#
+```c#
 public static class ReplaceArm
   {
 
