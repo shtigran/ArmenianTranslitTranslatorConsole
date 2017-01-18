@@ -3,6 +3,10 @@
 # C#6.0  .NET FRAMEWORK 4.6
 ----
 
+### Test and Result
+
+![gif source](https://github.com/shtigran/ArmenianTranslitOfEnglishTranslator/blob/master/ArmenianTranslitTranslator/Test.gif)
+
 ### Purpose
 
 Many Armenians in the world aren't able to understand armenian letters and armenian text. Many of them know armenian language, but know letters. This program allow inputed armenian text file  and translate it into english in another outpu file, in order to who knows the armenian lanuage, but doesn't know the armenian letters can read the text.
@@ -116,6 +120,5 @@ This class allow You translate Armenian text into translit.It takes the text and
 ### Program class implementation 
 This part take the location path of the file and copy the text into the string. The the method ReplaceArmText() of ReplaceArm class take it convert into translit and return to program. Then the program create the file and copy there the method returned text.
 
-### Test 
 
-### Result
+ 
