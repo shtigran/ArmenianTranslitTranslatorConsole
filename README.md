@@ -4,9 +4,11 @@
 ----
 
 ### Purpose
+
 Many Armenians in the world aren't able to understand armenian letters and armenian text. Many of them know armenian language, but know letters. This program allow inputed armenian text file  and translate it into english in another outpu file, in order to who knows the armenian lanuage, but doesn't know the armenian letters can read the text.
 ----
 ### ReplaceArm class implementation
+
 ՝՝՝c#
 public static class ReplaceArm
   {
@@ -107,6 +109,7 @@ public static class ReplaceArm
     }
   }
 ```
+
 ### Description of ReplaceArm class
 This class allow You translate Armenian text into translit.It takes the text and return translit text.
 
