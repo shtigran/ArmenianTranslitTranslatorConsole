@@ -16,10 +16,10 @@ Many Armenians in the world aren't able to understand armenian letters and armen
 
 ```c#
 public static class ReplaceArm
-  {
+{
 
     public static string ReplaceArmText(this string text)
-    {
+  {
       Console.OutputEncoding = System.Text.Encoding.UTF8;
       Dictionary<string, string> database = new Dictionary<string, string>();
       database.Add("ա", "a");
@@ -65,54 +65,54 @@ public static class ReplaceArm
       string result = "";
       bool flag = false;
       for (int i = 0; i < text.Length; i++)
-      {
+    {
         if (i < text.Length-1)
-        {
+      {
           if (text[i] == 'ո' && text[i + 1] == 'ւ')
-          { result += "u";
+        { result += "u";
             i++;
             continue;
-          }
         }
+      }
 
         if(char.ToLower(text[i]) <='z' && char.ToLower(text[i]) >= 'a')
-        {
+      {
           result += text[i].ToString();
           continue;
-        }
+      }
        if (text[i].ToString() == "\n")
-        {
+      {
           result += "\r\n";
           continue;
-        }
+      }
         if (char.IsNumber(text[i]) || char.IsPunctuation(text[i]) || char.IsWhiteSpace(text[i]))
-        {
+      {
           result += text[i].ToString();
           continue;
-        }
+      }
 
         if (char.IsUpper(text[i]))
           flag = true;
         foreach (KeyValuePair<string, string> key in database)
-        {         
+      {         
           if (text[i].ToString().ToLower() == key.Key && flag == true)
-          {
+        {
             result += key.Value.ToUpper();
             break;
-          }
+        }
           if (text[i].ToString() == key.Key)
-          {
+        {
             result += key.Value;
             break;
-          }            
-        }
+        }            
+      }
 
         flag = false;
-      }
+    }
             
       return result;
-    }
   }
+}
 ```
 
 ### Description of ReplaceArm class
