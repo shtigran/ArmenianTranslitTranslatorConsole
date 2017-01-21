@@ -10,6 +10,7 @@
 ### Purpose
 
 Many Armenians in the world aren't able to understand armenian letters and armenian text. Many of them know armenian language, but don't know letters. This program allow inpute armenian text file and translate it into armenian translit in another output file, in order to who knows the armenian language, but doesn't know the armenian letters can read the text.
+
 ----
 ### ReplaceArm class implementation
 
