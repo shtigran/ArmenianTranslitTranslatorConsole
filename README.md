@@ -120,6 +120,3 @@ This class allow You translate Armenian text into translit.It takes the text and
 
 ### Program class implementation 
 This part take the location path of the file and copy the text into the string. The the method ReplaceArmText() of ReplaceArm class take it convert into translit and return to program. Then the program create the file and copy there the method returned text.
-
-
- 
